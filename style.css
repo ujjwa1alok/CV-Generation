@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#cv-form {
+/* display: none; */
+}
+#cv-template{
+display: none;
+}
+.myimg {
+  border-radius: 50%;
+  width: 200px;
+}
+
+
+.background {
+   background-color:lavender;
+}
+#cvOutput {
+  margin-top: 30px;
+}
+
+#cvOutput h2 {
+  color: lavender;
+}   
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #cv-template, #cv-template * {
+    visibility: visible;
+  }
+  #cv-template {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
