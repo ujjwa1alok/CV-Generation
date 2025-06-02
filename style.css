@@ -2,14 +2,15 @@ body {
   font-family: Arial, sans-serif;
 }
 #cv-form {
-/* display: none; */
+ display: visible; 
 }
 #cv-template{
 display: none;
 }
 .myimg {
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
+  border: 4px solid #2a2a72;
 }
 
 
@@ -36,11 +37,6 @@ display: none;
     left: 0;
     top: 0;
   }
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f7fa;
 }
 
 .container {
@@ -74,10 +70,4 @@ button {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.myimg {
-  border-radius: 50%;
-  width: 150px;
-  border: 4px solid #2a2a72;
 }
