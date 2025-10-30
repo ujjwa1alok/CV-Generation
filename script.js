@@ -1,6 +1,4 @@
-// alert("Loading");
 function addNewWEField() {
-  //console. Log("Adding new field");
 
   let newNode = document.createElement ("textarea");
   newNode.classList.add ("form-control");
@@ -29,34 +27,20 @@ function addNewAQField() {
   aqob.insertBefore(newNode, aqAddButtonOb);
 }  
 
-//generating cv
+
 function generateCV() {
-  // console.log("generating CV");
 
    let nameField=document.getElementById('nameField').value;
-
    let nameT1=document.getElementById('nameT1')
 
    nameT1.innerHTML= nameField;
 
    document.getElementById("rankT").innerHTML = document.getElementById("rankField").value;
-   document.getElementById("durationT").innerHTML = document.getElementById("durationField").value;
-
-   //direct
-
-   //contact
+   document.getElementById("durationT").innerHTML = document.getElementById("durationField").value;  
    document.getElementById("contactT").innerHTML = document.getElementById("contactField").value;
-
-   //address
    document.getElementById("addressT").innerHTML = document.getElementById("addressField").value;
-
-   //intrest
    document.getElementById('intrestT').innerHTML = document.getElementById('intrestField').value;
-
-   //linkedin
    document.getElementById("linkedT").innerHTML = document.getElementById("linkedField").value;
-
-    //we
 
     let wes=document.getElementsByClassName("weField")
 
@@ -68,9 +52,7 @@ function generateCV() {
     }
 
     document.getElementById("weT").innerHTML=str
-
-    //aq
-
+    
    let aqs = document.getElementsByClassName("aqField");
    let str1 = "";
    for (let e of aqs) {
@@ -79,7 +61,6 @@ function generateCV() {
 
     document.getElementById("aqT").innerHTML = str1;
 
-    //code for setting image
 
     let file=document.getElementById("imgField").files[0];
 
@@ -89,7 +70,6 @@ function generateCV() {
 
     reader.readAsDataURL(file);
 
-    //set the image to template
 
     reader.onloadend = function () {
       document.getElementById("imgtemplate").src = reader.result;
@@ -101,7 +81,6 @@ function generateCV() {
 
 }
 
- // print CV
  function printCV() {
     window.print();
   }
